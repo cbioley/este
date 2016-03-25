@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { reduxFields } from '../lib/redux-fields';
+import { reducer as reduxFields } from 'redux-fields';
 import { routerReducer as routing } from 'react-router-redux';
 
 import auth from '../auth/reducer';

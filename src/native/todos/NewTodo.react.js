@@ -3,7 +3,7 @@ import Component from 'react-pure-render/component';
 import React, { PropTypes, StyleSheet, TextInput, View } from 'react-native';
 import newTodoMessages from '../../common/todos/newTodoMessages';
 import { connect } from 'react-redux';
-import { fields } from '../../common/lib/redux-fields';
+import { fields } from 'redux-fields';
 import { injectIntl, intlShape } from 'react-intl';
 
 const styles = StyleSheet.create({

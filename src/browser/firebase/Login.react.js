@@ -3,7 +3,7 @@ import Component from 'react-pure-render/component';
 import React, { PropTypes } from 'react';
 import { FormattedMessage, defineMessages, injectIntl, intlShape } from 'react-intl';
 import { connect } from 'react-redux';
-import { fields } from '../../common/lib/redux-fields';
+import { fields } from 'redux-fields';
 import { firebaseActions } from 'este-firebase-redux';
 
 const messages = defineMessages({

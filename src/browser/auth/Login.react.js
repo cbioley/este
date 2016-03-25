@@ -5,7 +5,7 @@ import LoginError from './LoginError.react';
 import React, { PropTypes } from 'react';
 import { FormattedMessage, defineMessages, injectIntl, intlShape } from 'react-intl';
 import { connect } from 'react-redux';
-import { fields } from '../../common/lib/redux-fields';
+import { fields } from 'redux-fields';
 import { focusInvalidField } from '../../common/lib/validation';
 import { replace } from 'react-router-redux';
 
