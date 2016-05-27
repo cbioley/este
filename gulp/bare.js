@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import gulp from 'gulp';
 
-gulp.task('bare', () => {
+gulp.task('bare', done => {
   console.log(`
     Steps to make bare Este app.
 
@@ -21,4 +21,5 @@ gulp.task('bare', () => {
 
     Yeah, it's that easy.
   `);
+  done();
 });

@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import gulp from 'gulp';
 
-gulp.task('messages-check', () => {
+gulp.task('messages-check', done => {
   const loadMessages = require('../src/server/intl/loadMessages');
   const messages = loadMessages({ includeDefault: true });
   const defaultMessagesKeys = Object.keys(messages._default);
@@ -24,4 +24,5 @@ gulp.task('messages-check', () => {
       log('missing messages', missingMessagesKeys);
       log('unused messages', unusedMessagesKeys);
     });
+  done();
 });

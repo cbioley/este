@@ -2,9 +2,10 @@ import fs from 'fs';
 import gulp from 'gulp';
 import { injectFavicon } from './support/favicon/favicon';
 
-gulp.task('favicon-inject', () => {
+gulp.task('favicon-inject', done => {
   const content = `/* eslint-disable quote-props, quotes */
 export default ${JSON.stringify(injectFavicon(), null, 2)};
 `;
   fs.writeFileSync('./src/browser/app/favicon.js', content);
+  done();
 });

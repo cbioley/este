@@ -14,7 +14,7 @@ const existsSync = path => {
 
 gulp.task(
   'server-nodemon',
-  (cb) => {
+  done => {
     const nodemonPaths = [
       'node_modules/.bin/nodemon.cmd', // Windows uses nodemon.cmd
       'node_modules/.bin/nodemon'
@@ -28,6 +28,6 @@ gulp.task(
       '--ignore',
       'webpack-assets.json',
       path.normalize('src/server')
-    )(cb);
+    )(done);
   }
 );

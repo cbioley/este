@@ -1,6 +1,3 @@
 import gulp from 'gulp';
-import runSequence from 'run-sequence';
 
-gulp.task('test', done => {
-  runSequence('eslint-ci', 'mocha', 'build-webpack', done);
-});
+gulp.task('test', gulp.series('eslint-ci', 'mocha', 'build-webpack'));

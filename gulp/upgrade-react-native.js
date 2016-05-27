@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import gulp from 'gulp';
 
-gulp.task('upgrade-react-native', () => {
+gulp.task('upgrade-react-native', done => {
   console.log(`
     Steps to upgrade React Native in Este
 
@@ -14,4 +14,5 @@ gulp.task('upgrade-react-native', () => {
 
     Yeah, it's that easy.
   `);
+  done();
 });
